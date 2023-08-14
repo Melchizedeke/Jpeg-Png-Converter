@@ -7,5 +7,5 @@ from PIL import Image
 main_folder = sys.argv[1]
 new_folder = sys.argv[2]
 
-# print to test if it works well
-print(main_folder, new_folder)
+# To check if the new folder actually exists
+print(os.path.exists(new_folder))

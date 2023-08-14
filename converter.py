@@ -8,4 +8,5 @@ main_folder = sys.argv[1]
 new_folder = sys.argv[2]
 
 # To check if the new folder actually exists
-print(os.path.exists(new_folder))
+if not os.path.exists(new_folder):
+    os.makedirs(new_folder)

@@ -15,6 +15,7 @@ if not os.path.exists(new_folder):
 for filename in os.listdir(main_folder):
     img = Image.open(f'{main_folder}{filename}')
     new_name = os.path.splitext(filename)[0]
+    print(new_name)
     img.save(f'{new_folder}{new_name}.png', 'png')
     
     # A little checker

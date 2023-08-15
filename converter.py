@@ -12,9 +12,9 @@ if not os.path.exists(new_folder):
     os.makedirs(new_folder)
 
 # Loop through the Pkoemons folder, reassign the format to the images and save in the New Pokemosn folder
-for filename in os.listdir(main_folder):
-    img = Image.open(f'{main_folder}{filename}')
-    new_name = os.path.splitext(filename)[0]
+for item in os.listdir(main_folder):
+    img = Image.open(f'{main_folder}{item}')
+    new_name = os.path.splitext(item)[0]
     print(new_name)
     img.save(f'{new_folder}{new_name}.png', 'png')
     
